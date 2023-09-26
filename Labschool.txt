@@ -1,0 +1,418 @@
+[34mINFO [0;39m 20-09-2023 - 21:10:54.821 [main] c.e.labschool.LabschoolApplication - Starting LabschoolApplication using Java 17.0.2 with PID 13212 (C:\Users\ok\Documents\LAB365\labschool\target\classes started by ok in C:\Users\ok\Documents\LAB365\labschool)
+[34mINFO [0;39m 20-09-2023 - 21:10:54.826 [main] c.e.labschool.LabschoolApplication - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 20-09-2023 - 21:10:58.678 [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[34mINFO [0;39m 20-09-2023 - 21:10:59.003 [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 289 ms. Found 3 JPA repository interfaces.
+[34mINFO [0;39m 20-09-2023 - 21:11:02.030 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[34mINFO [0;39m 20-09-2023 - 21:11:02.066 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[34mINFO [0;39m 20-09-2023 - 21:11:02.067 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+[34mINFO [0;39m 20-09-2023 - 21:11:02.567 [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[34mINFO [0;39m 20-09-2023 - 21:11:02.568 [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 7491 ms
+[34mINFO [0;39m 20-09-2023 - 21:11:03.381 [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[34mINFO [0;39m 20-09-2023 - 21:11:03.711 [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+[34mINFO [0;39m 20-09-2023 - 21:11:03.718 [main] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+[34mINFO [0;39m 20-09-2023 - 21:11:04.308 [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+[34mINFO [0;39m 20-09-2023 - 21:11:04.759 [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[34mINFO [0;39m 20-09-2023 - 21:11:04.798 [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[34mINFO [0;39m 20-09-2023 - 21:11:07.134 [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5cc1bf20
+[34mINFO [0;39m 20-09-2023 - 21:11:07.139 [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[34mINFO [0;39m 20-09-2023 - 21:11:08.798 [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+[34mINFO [0;39m 20-09-2023 - 21:11:10.818 [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[34mINFO [0;39m 20-09-2023 - 21:11:13.106 [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[34mINFO [0;39m 20-09-2023 - 21:11:13.818 [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+[31mWARN [0;39m 20-09-2023 - 21:11:16.650 [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[34mINFO [0;39m 20-09-2023 - 21:11:18.055 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[34mINFO [0;39m 20-09-2023 - 21:11:18.129 [main] c.e.labschool.LabschoolApplication - Started LabschoolApplication in 25.409 seconds (process running for 26.858)
+[34mINFO [0;39m 20-09-2023 - 21:11:18.137 [main] c.e.labschool.LabschoolApplication - API INICIADA COM SUCESSO.
+[34mINFO [0;39m 20-09-2023 - 21:23:44.514 [main] c.e.labschool.LabschoolApplication - Starting LabschoolApplication using Java 17.0.2 with PID 11256 (C:\Users\ok\Documents\LAB365\labschool\target\classes started by ok in C:\Users\ok\Documents\LAB365\labschool)
+[34mINFO [0;39m 20-09-2023 - 21:23:44.517 [main] c.e.labschool.LabschoolApplication - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 20-09-2023 - 21:23:47.529 [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[34mINFO [0;39m 20-09-2023 - 21:23:47.837 [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 278 ms. Found 3 JPA repository interfaces.
+[34mINFO [0;39m 20-09-2023 - 21:23:51.089 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[34mINFO [0;39m 20-09-2023 - 21:23:51.140 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[34mINFO [0;39m 20-09-2023 - 21:23:51.141 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+[34mINFO [0;39m 20-09-2023 - 21:23:51.627 [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[34mINFO [0;39m 20-09-2023 - 21:23:51.629 [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6890 ms
+[34mINFO [0;39m 20-09-2023 - 21:23:52.303 [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[34mINFO [0;39m 20-09-2023 - 21:23:52.581 [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+[34mINFO [0;39m 20-09-2023 - 21:23:52.593 [main] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+[34mINFO [0;39m 20-09-2023 - 21:23:53.233 [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+[34mINFO [0;39m 20-09-2023 - 21:23:53.957 [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[34mINFO [0;39m 20-09-2023 - 21:23:54.025 [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[34mINFO [0;39m 20-09-2023 - 21:23:56.966 [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@46cf8c07
+[34mINFO [0;39m 20-09-2023 - 21:23:56.969 [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[34mINFO [0;39m 20-09-2023 - 21:23:58.258 [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+[34mINFO [0;39m 20-09-2023 - 21:24:00.655 [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[34mINFO [0;39m 20-09-2023 - 21:24:03.015 [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[34mINFO [0;39m 20-09-2023 - 21:24:04.098 [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+[31mWARN [0;39m 20-09-2023 - 21:24:08.640 [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[34mINFO [0;39m 20-09-2023 - 21:24:11.451 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[34mINFO [0;39m 20-09-2023 - 21:24:11.541 [main] c.e.labschool.LabschoolApplication - Started LabschoolApplication in 28.672 seconds (process running for 30.1)
+[34mINFO [0;39m 20-09-2023 - 21:24:11.567 [main] c.e.labschool.LabschoolApplication - API INICIADA COM SUCESSO.
+[34mINFO [0;39m 20-09-2023 - 21:25:36.889 [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[34mINFO [0;39m 20-09-2023 - 21:25:36.889 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[34mINFO [0;39m 20-09-2023 - 21:25:36.890 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[34mINFO [0;39m 20-09-2023 - 21:25:37.549 [http-nio-8080-exec-1] c.e.l.controllers.PedagogoController - Pedagogo não foi identificado.
+[34mINFO [0;39m 20-09-2023 - 21:29:36.141 [http-nio-8080-exec-5] c.e.l.controllers.PedagogoController - Pedagogo não foi identificado.
+[34mINFO [0;39m 20-09-2023 - 21:31:27.321 [http-nio-8080-exec-8] c.e.l.controllers.PedagogoController - Consulta Pedagogo concluída
+[34mINFO [0;39m 20-09-2023 - 21:34:16.836 [main] c.e.labschool.LabschoolApplication - Starting LabschoolApplication using Java 17.0.2 with PID 19924 (C:\Users\ok\Documents\LAB365\labschool\target\classes started by ok in C:\Users\ok\Documents\LAB365\labschool)
+[34mINFO [0;39m 20-09-2023 - 21:34:16.841 [main] c.e.labschool.LabschoolApplication - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 20-09-2023 - 21:34:19.877 [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[34mINFO [0;39m 20-09-2023 - 21:34:20.278 [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 357 ms. Found 3 JPA repository interfaces.
+[34mINFO [0;39m 20-09-2023 - 21:34:22.953 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[34mINFO [0;39m 20-09-2023 - 21:34:22.987 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[34mINFO [0;39m 20-09-2023 - 21:34:22.988 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+[34mINFO [0;39m 20-09-2023 - 21:34:23.420 [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[34mINFO [0;39m 20-09-2023 - 21:34:23.421 [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6366 ms
+[34mINFO [0;39m 20-09-2023 - 21:34:24.012 [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[34mINFO [0;39m 20-09-2023 - 21:34:24.247 [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+[34mINFO [0;39m 20-09-2023 - 21:34:24.255 [main] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+[34mINFO [0;39m 20-09-2023 - 21:34:24.869 [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+[34mINFO [0;39m 20-09-2023 - 21:34:25.406 [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[34mINFO [0;39m 20-09-2023 - 21:34:25.475 [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[34mINFO [0;39m 20-09-2023 - 21:34:28.039 [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3dc39459
+[34mINFO [0;39m 20-09-2023 - 21:34:28.043 [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[34mINFO [0;39m 20-09-2023 - 21:34:29.398 [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+[34mINFO [0;39m 20-09-2023 - 21:34:32.009 [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[34mINFO [0;39m 20-09-2023 - 21:34:34.398 [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[34mINFO [0;39m 20-09-2023 - 21:34:35.071 [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+[31mWARN [0;39m 20-09-2023 - 21:34:38.607 [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[34mINFO [0;39m 20-09-2023 - 21:34:40.503 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[34mINFO [0;39m 20-09-2023 - 21:34:40.566 [main] c.e.labschool.LabschoolApplication - Started LabschoolApplication in 25.519 seconds (process running for 27.183)
+[34mINFO [0;39m 20-09-2023 - 21:34:40.588 [main] c.e.labschool.LabschoolApplication - API INICIADA COM SUCESSO.
+[34mINFO [0;39m 20-09-2023 - 21:35:00.904 [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[34mINFO [0;39m 20-09-2023 - 21:35:00.905 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[34mINFO [0;39m 20-09-2023 - 21:35:00.906 [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+[34mINFO [0;39m 20-09-2023 - 21:35:00.948 [http-nio-8080-exec-3] c.e.l.controllers.PedagogoController - Listagem Pedagogos Concluída.
+[34mINFO [0;39m 20-09-2023 - 21:35:32.089 [http-nio-8080-exec-4] c.e.l.controllers.PedagogoController - Instância Pedagogo cadastrada: Alexandre
+[34mINFO [0;39m 21-09-2023 - 19:53:13.541 [main] c.e.labschool.LabschoolApplication - Starting LabschoolApplication using Java 17.0.2 with PID 21512 (C:\Users\ok\Documents\LAB365\labschool\target\classes started by ok in C:\Users\ok\Documents\LAB365\labschool)
+[34mINFO [0;39m 21-09-2023 - 19:53:13.548 [main] c.e.labschool.LabschoolApplication - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 21-09-2023 - 19:53:19.519 [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[34mINFO [0;39m 21-09-2023 - 19:53:20.118 [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 537 ms. Found 3 JPA repository interfaces.
+[34mINFO [0;39m 21-09-2023 - 19:53:25.370 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[34mINFO [0;39m 21-09-2023 - 19:53:25.435 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[34mINFO [0;39m 21-09-2023 - 19:53:25.437 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+[34mINFO [0;39m 21-09-2023 - 19:53:26.336 [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[34mINFO [0;39m 21-09-2023 - 19:53:26.338 [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 12466 ms
+[34mINFO [0;39m 21-09-2023 - 19:53:27.991 [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[34mINFO [0;39m 21-09-2023 - 19:53:28.418 [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+[34mINFO [0;39m 21-09-2023 - 19:53:28.425 [main] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+[34mINFO [0;39m 21-09-2023 - 19:53:29.372 [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+[34mINFO [0;39m 21-09-2023 - 19:53:30.007 [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[34mINFO [0;39m 21-09-2023 - 19:53:30.079 [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[34mINFO [0;39m 21-09-2023 - 19:53:34.191 [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5abf6a99
+[34mINFO [0;39m 21-09-2023 - 19:53:34.199 [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[34mINFO [0;39m 21-09-2023 - 19:53:36.487 [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+[34mINFO [0;39m 21-09-2023 - 19:53:42.661 [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[34mINFO [0;39m 21-09-2023 - 19:53:45.188 [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[34mINFO [0;39m 21-09-2023 - 19:53:46.851 [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+[31mWARN [0;39m 21-09-2023 - 19:53:49.875 [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[34mINFO [0;39m 21-09-2023 - 19:53:51.085 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[34mINFO [0;39m 21-09-2023 - 19:53:51.122 [main] c.e.labschool.LabschoolApplication - Started LabschoolApplication in 40.641 seconds (process running for 43.486)
+[34mINFO [0;39m 21-09-2023 - 19:53:51.130 [main] c.e.labschool.LabschoolApplication - API INICIADA COM SUCESSO.
+[34mINFO [0;39m 21-09-2023 - 19:56:30.671 [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[34mINFO [0;39m 21-09-2023 - 19:56:30.671 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[34mINFO [0;39m 21-09-2023 - 19:56:30.674 [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+[31mWARN [0;39m 21-09-2023 - 19:56:30.740 [http-nio-8080-exec-1] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'POST' is not supported]
+[34mINFO [0;39m 21-09-2023 - 19:59:55.713 [http-nio-8080-exec-2] c.e.l.controllers.PedagogoController - Instância Pedagogo cadastrada: Joana
+[34mINFO [0;39m 21-09-2023 - 20:03:08.918 [http-nio-8080-exec-9] c.e.l.controllers.PedagogoController - Instância Pedagogo cadastrada: Joana
+[34mINFO [0;39m 25-09-2023 - 21:34:44.560 [main] c.e.labschool.LabschoolApplication - Starting LabschoolApplication using Java 18.0.2 with PID 56714 (/Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09/target/classes started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 25-09-2023 - 21:34:44.561 [main] c.e.labschool.LabschoolApplication - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 25-09-2023 - 21:34:44.862 [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[34mINFO [0;39m 25-09-2023 - 21:34:44.889 [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 22 ms. Found 3 JPA repository interfaces.
+[34mINFO [0;39m 25-09-2023 - 21:34:45.123 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[34mINFO [0;39m 25-09-2023 - 21:34:45.128 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[34mINFO [0;39m 25-09-2023 - 21:34:45.129 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+[34mINFO [0;39m 25-09-2023 - 21:34:45.174 [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[34mINFO [0;39m 25-09-2023 - 21:34:45.174 [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 593 ms
+[34mINFO [0;39m 25-09-2023 - 21:34:45.249 [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[34mINFO [0;39m 25-09-2023 - 21:34:45.286 [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+[34mINFO [0;39m 25-09-2023 - 21:34:45.288 [main] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+[34mINFO [0;39m 25-09-2023 - 21:34:45.351 [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+[34mINFO [0;39m 25-09-2023 - 21:34:45.415 [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[34mINFO [0;39m 25-09-2023 - 21:34:45.423 [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[34mINFO [0;39m 25-09-2023 - 21:34:45.508 [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1b7554d4
+[34mINFO [0;39m 25-09-2023 - 21:34:45.509 [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[34mINFO [0;39m 25-09-2023 - 21:34:45.645 [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+[34mINFO [0;39m 25-09-2023 - 21:34:45.961 [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[34mINFO [0;39m 25-09-2023 - 21:34:46.031 [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[34mINFO [0;39m 25-09-2023 - 21:34:46.139 [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+[31mWARN [0;39m 25-09-2023 - 21:34:46.316 [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'alunoController': Unsatisfied dependency expressed through field 'alunoRepository': Error creating bean with name 'alunoRepository' defined in com.example.labschool.repositories.AlunoRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.example.labschool.repositories.AlunoRepository.findByIdName(); Reason: Validation failed for query for method public abstract java.util.List com.example.labschool.repositories.AlunoRepository.findByIdName()
+[34mINFO [0;39m 25-09-2023 - 21:34:46.316 [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[34mINFO [0;39m 25-09-2023 - 21:34:46.317 [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[34mINFO [0;39m 25-09-2023 - 21:34:46.319 [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[34mINFO [0;39m 25-09-2023 - 21:34:46.320 [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[34mINFO [0;39m 25-09-2023 - 21:34:46.325 [main] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[1;31mERROR[0;39m 25-09-2023 - 21:34:46.333 [main] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'alunoController': Unsatisfied dependency expressed through field 'alunoRepository': Error creating bean with name 'alunoRepository' defined in com.example.labschool.repositories.AlunoRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.example.labschool.repositories.AlunoRepository.findByIdName(); Reason: Validation failed for query for method public abstract java.util.List com.example.labschool.repositories.AlunoRepository.findByIdName()
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:716)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:696)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:483)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.labschool.LabschoolApplication.main(LabschoolApplication.java:15)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'alunoRepository' defined in com.example.labschool.repositories.AlunoRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.example.labschool.repositories.AlunoRepository.findByIdName(); Reason: Validation failed for query for method public abstract java.util.List com.example.labschool.repositories.AlunoRepository.findByIdName()
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:713)
+	... 20 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.example.labschool.repositories.AlunoRepository.findByIdName(); Reason: Validation failed for query for method public abstract java.util.List com.example.labschool.repositories.AlunoRepository.findByIdName()
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:115)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:99)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:88)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:88)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:357)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:279)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:245)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:285)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1817)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	... 30 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.example.labschool.repositories.AlunoRepository.findByIdName()
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:100)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.<init>(SimpleJpaQuery.java:70)
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromMethodWithQueryString(JpaQueryFactory.java:60)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$DeclaredQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:170)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:252)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:95)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:111)
+	... 42 common frames omitted
+Caused by: java.lang.IllegalArgumentException: org.hibernate.query.sqm.UnknownEntityException: Could not resolve root entity 'com.example.labschool.models.Aluno'
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:138)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:162)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:168)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:795)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:704)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:120)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:360)
+	at jdk.proxy2/jdk.proxy2.$Proxy114.createQuery(Unknown Source)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:94)
+	... 48 common frames omitted
+Caused by: org.hibernate.query.sqm.UnknownEntityException: Could not resolve root entity 'com.example.labschool.models.Aluno'
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitRootEntity(SemanticQueryBuilder.java:1960)
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitRootEntity(SemanticQueryBuilder.java:253)
+	at org.hibernate.grammars.hql.HqlParser$RootEntityContext.accept(HqlParser.java:2473)
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitEntityWithJoins(SemanticQueryBuilder.java:1874)
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitFromClause(SemanticQueryBuilder.java:1865)
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitQuery(SemanticQueryBuilder.java:1141)
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitQuerySpecExpression(SemanticQueryBuilder.java:937)
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitQuerySpecExpression(SemanticQueryBuilder.java:253)
+	at org.hibernate.grammars.hql.HqlParser$QuerySpecExpressionContext.accept(HqlParser.java:1818)
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitSimpleQueryGroup(SemanticQueryBuilder.java:931)
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitSimpleQueryGroup(SemanticQueryBuilder.java:253)
+	at org.hibernate.grammars.hql.HqlParser$SimpleQueryGroupContext.accept(HqlParser.java:1711)
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitSelectStatement(SemanticQueryBuilder.java:418)
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitStatement(SemanticQueryBuilder.java:377)
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.buildSemanticModel(SemanticQueryBuilder.java:295)
+	at org.hibernate.query.hql.internal.StandardHqlTranslator.translate(StandardHqlTranslator.java:81)
+	at org.hibernate.internal.AbstractSharedSessionContract.lambda$interpretHql$2(AbstractSharedSessionContract.java:744)
+	at org.hibernate.query.internal.QueryInterpretationCacheStandardImpl.createHqlInterpretation(QueryInterpretationCacheStandardImpl.java:141)
+	at org.hibernate.query.internal.QueryInterpretationCacheStandardImpl.resolveHqlInterpretation(QueryInterpretationCacheStandardImpl.java:128)
+	at org.hibernate.internal.AbstractSharedSessionContract.interpretHql(AbstractSharedSessionContract.java:741)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:786)
+	... 55 common frames omitted
+[34mINFO [0;39m 25-09-2023 - 21:36:36.709 [main] c.e.labschool.LabschoolApplication - Starting LabschoolApplication using Java 18.0.2 with PID 56937 (/Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09/target/classes started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 25-09-2023 - 21:36:36.710 [main] c.e.labschool.LabschoolApplication - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 25-09-2023 - 21:36:36.994 [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[34mINFO [0;39m 25-09-2023 - 21:36:37.023 [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 26 ms. Found 3 JPA repository interfaces.
+[34mINFO [0;39m 25-09-2023 - 21:36:37.254 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[34mINFO [0;39m 25-09-2023 - 21:36:37.258 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[34mINFO [0;39m 25-09-2023 - 21:36:37.258 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+[34mINFO [0;39m 25-09-2023 - 21:36:37.298 [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[34mINFO [0;39m 25-09-2023 - 21:36:37.298 [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 566 ms
+[34mINFO [0;39m 25-09-2023 - 21:36:37.364 [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[34mINFO [0;39m 25-09-2023 - 21:36:37.392 [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+[34mINFO [0;39m 25-09-2023 - 21:36:37.393 [main] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+[34mINFO [0;39m 25-09-2023 - 21:36:37.453 [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+[34mINFO [0;39m 25-09-2023 - 21:36:37.512 [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[34mINFO [0;39m 25-09-2023 - 21:36:37.525 [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[34mINFO [0;39m 25-09-2023 - 21:36:37.570 [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1693ff90
+[34mINFO [0;39m 25-09-2023 - 21:36:37.571 [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[34mINFO [0;39m 25-09-2023 - 21:36:37.701 [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+[34mINFO [0;39m 25-09-2023 - 21:36:38.008 [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[34mINFO [0;39m 25-09-2023 - 21:36:38.075 [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[34mINFO [0;39m 25-09-2023 - 21:36:38.179 [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+[31mWARN [0;39m 25-09-2023 - 21:36:38.361 [main] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'alunoController': Unsatisfied dependency expressed through field 'alunoRepository': Error creating bean with name 'alunoRepository' defined in com.example.labschool.repositories.AlunoRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.example.labschool.repositories.AlunoRepository.findByIdName(); Reason: Validation failed for query for method public abstract java.util.List com.example.labschool.repositories.AlunoRepository.findByIdName()
+[34mINFO [0;39m 25-09-2023 - 21:36:38.361 [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[34mINFO [0;39m 25-09-2023 - 21:36:38.362 [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[34mINFO [0;39m 25-09-2023 - 21:36:38.364 [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[34mINFO [0;39m 25-09-2023 - 21:36:38.365 [main] o.a.catalina.core.StandardService - Stopping service [Tomcat]
+[34mINFO [0;39m 25-09-2023 - 21:36:38.372 [main] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[1;31mERROR[0;39m 25-09-2023 - 21:36:38.380 [main] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'alunoController': Unsatisfied dependency expressed through field 'alunoRepository': Error creating bean with name 'alunoRepository' defined in com.example.labschool.repositories.AlunoRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.example.labschool.repositories.AlunoRepository.findByIdName(); Reason: Validation failed for query for method public abstract java.util.List com.example.labschool.repositories.AlunoRepository.findByIdName()
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:716)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:696)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:483)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.labschool.LabschoolApplication.main(LabschoolApplication.java:15)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'alunoRepository' defined in com.example.labschool.repositories.AlunoRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Could not create query for public abstract java.util.List com.example.labschool.repositories.AlunoRepository.findByIdName(); Reason: Validation failed for query for method public abstract java.util.List com.example.labschool.repositories.AlunoRepository.findByIdName()
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1770)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:598)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1417)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:713)
+	... 20 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List com.example.labschool.repositories.AlunoRepository.findByIdName(); Reason: Validation failed for query for method public abstract java.util.List com.example.labschool.repositories.AlunoRepository.findByIdName()
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:115)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:99)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:88)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:88)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:357)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:279)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:245)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:285)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1817)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1766)
+	... 30 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List com.example.labschool.repositories.AlunoRepository.findByIdName()
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:100)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.<init>(SimpleJpaQuery.java:70)
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromMethodWithQueryString(JpaQueryFactory.java:60)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$DeclaredQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:170)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:252)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:95)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:111)
+	... 42 common frames omitted
+Caused by: java.lang.IllegalArgumentException: org.hibernate.query.sqm.UnknownEntityException: Could not resolve root entity 'com.example.labschool.models.Aluno'
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:138)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:162)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:168)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:795)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:704)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:120)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:360)
+	at jdk.proxy2/jdk.proxy2.$Proxy114.createQuery(Unknown Source)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:94)
+	... 48 common frames omitted
+Caused by: org.hibernate.query.sqm.UnknownEntityException: Could not resolve root entity 'com.example.labschool.models.Aluno'
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitRootEntity(SemanticQueryBuilder.java:1960)
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitRootEntity(SemanticQueryBuilder.java:253)
+	at org.hibernate.grammars.hql.HqlParser$RootEntityContext.accept(HqlParser.java:2473)
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitEntityWithJoins(SemanticQueryBuilder.java:1874)
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitFromClause(SemanticQueryBuilder.java:1865)
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitQuery(SemanticQueryBuilder.java:1141)
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitQuerySpecExpression(SemanticQueryBuilder.java:937)
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitQuerySpecExpression(SemanticQueryBuilder.java:253)
+	at org.hibernate.grammars.hql.HqlParser$QuerySpecExpressionContext.accept(HqlParser.java:1818)
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitSimpleQueryGroup(SemanticQueryBuilder.java:931)
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitSimpleQueryGroup(SemanticQueryBuilder.java:253)
+	at org.hibernate.grammars.hql.HqlParser$SimpleQueryGroupContext.accept(HqlParser.java:1711)
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitSelectStatement(SemanticQueryBuilder.java:418)
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.visitStatement(SemanticQueryBuilder.java:377)
+	at org.hibernate.query.hql.internal.SemanticQueryBuilder.buildSemanticModel(SemanticQueryBuilder.java:295)
+	at org.hibernate.query.hql.internal.StandardHqlTranslator.translate(StandardHqlTranslator.java:81)
+	at org.hibernate.internal.AbstractSharedSessionContract.lambda$interpretHql$2(AbstractSharedSessionContract.java:744)
+	at org.hibernate.query.internal.QueryInterpretationCacheStandardImpl.createHqlInterpretation(QueryInterpretationCacheStandardImpl.java:141)
+	at org.hibernate.query.internal.QueryInterpretationCacheStandardImpl.resolveHqlInterpretation(QueryInterpretationCacheStandardImpl.java:128)
+	at org.hibernate.internal.AbstractSharedSessionContract.interpretHql(AbstractSharedSessionContract.java:741)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:786)
+	... 55 common frames omitted
+[34mINFO [0;39m 25-09-2023 - 21:38:53.572 [main] c.e.labschool.LabschoolApplication - Starting LabschoolApplication using Java 18.0.2 with PID 57149 (/Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09/target/classes started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 25-09-2023 - 21:38:53.572 [main] c.e.labschool.LabschoolApplication - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 25-09-2023 - 21:38:53.862 [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[34mINFO [0;39m 25-09-2023 - 21:38:53.887 [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+[34mINFO [0;39m 25-09-2023 - 21:38:54.107 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+[34mINFO [0;39m 25-09-2023 - 21:38:54.111 [main] o.a.catalina.core.StandardService - Starting service [Tomcat]
+[34mINFO [0;39m 25-09-2023 - 21:38:54.111 [main] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.12]
+[34mINFO [0;39m 25-09-2023 - 21:38:54.148 [main] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+[34mINFO [0;39m 25-09-2023 - 21:38:54.148 [main] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 550 ms
+[34mINFO [0;39m 25-09-2023 - 21:38:54.215 [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[34mINFO [0;39m 25-09-2023 - 21:38:54.240 [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+[34mINFO [0;39m 25-09-2023 - 21:38:54.241 [main] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+[34mINFO [0;39m 25-09-2023 - 21:38:54.297 [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+[34mINFO [0;39m 25-09-2023 - 21:38:54.359 [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[34mINFO [0;39m 25-09-2023 - 21:38:54.369 [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[34mINFO [0;39m 25-09-2023 - 21:38:54.426 [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1693ff90
+[34mINFO [0;39m 25-09-2023 - 21:38:54.426 [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[34mINFO [0;39m 25-09-2023 - 21:38:54.538 [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+[34mINFO [0;39m 25-09-2023 - 21:38:54.843 [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[34mINFO [0;39m 25-09-2023 - 21:38:54.911 [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[34mINFO [0;39m 25-09-2023 - 21:38:55.020 [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+[31mWARN [0;39m 25-09-2023 - 21:38:55.229 [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[34mINFO [0;39m 25-09-2023 - 21:38:55.377 [main] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+[34mINFO [0;39m 25-09-2023 - 21:38:55.382 [main] c.e.labschool.LabschoolApplication - Started LabschoolApplication in 1.992 seconds (process running for 2.25)
+[34mINFO [0;39m 25-09-2023 - 21:38:55.383 [main] c.e.labschool.LabschoolApplication - API INICIADA COM SUCESSO.
+[34mINFO [0;39m 25-09-2023 - 21:42:51.741 [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[34mINFO [0;39m 25-09-2023 - 21:42:51.746 [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[34mINFO [0;39m 25-09-2023 - 21:42:51.747 [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[34mINFO [0;39m 25-09-2023 - 21:58:03.762 [main] c.e.l.r.AlunoRepositoryTest - Starting AlunoRepositoryTest using Java 18.0.2 with PID 58806 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 25-09-2023 - 21:58:03.763 [main] c.e.l.r.AlunoRepositoryTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 25-09-2023 - 21:58:04.070 [main] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[34mINFO [0;39m 25-09-2023 - 21:58:04.097 [main] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 3 JPA repository interfaces.
+[34mINFO [0;39m 25-09-2023 - 21:58:04.308 [main] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+[34mINFO [0;39m 25-09-2023 - 21:58:04.335 [main] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.2.7.Final
+[34mINFO [0;39m 25-09-2023 - 21:58:04.337 [main] org.hibernate.cfg.Environment - HHH000406: Using bytecode reflection optimizer
+[34mINFO [0;39m 25-09-2023 - 21:58:04.409 [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+[34mINFO [0;39m 25-09-2023 - 21:58:04.478 [main] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+[34mINFO [0;39m 25-09-2023 - 21:58:04.487 [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+[34mINFO [0;39m 25-09-2023 - 21:58:04.557 [main] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@367d34c0
+[34mINFO [0;39m 25-09-2023 - 21:58:04.559 [main] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+[34mINFO [0;39m 25-09-2023 - 21:58:04.690 [main] o.h.b.i.BytecodeProviderInitiator - HHH000021: Bytecode provider name : bytebuddy
+[34mINFO [0;39m 25-09-2023 - 21:58:05.016 [main] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[34mINFO [0;39m 25-09-2023 - 21:58:05.084 [main] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[34mINFO [0;39m 25-09-2023 - 21:58:05.205 [main] o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+[31mWARN [0;39m 25-09-2023 - 21:58:05.513 [main] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[34mINFO [0;39m 25-09-2023 - 21:58:05.671 [main] c.e.l.r.AlunoRepositoryTest - Started AlunoRepositoryTest in 2.051 seconds (process running for 2.611)
+[34mINFO [0;39m 25-09-2023 - 21:58:06.079 [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[34mINFO [0;39m 25-09-2023 - 21:58:06.080 [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+[34mINFO [0;39m 25-09-2023 - 21:58:06.082 [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
