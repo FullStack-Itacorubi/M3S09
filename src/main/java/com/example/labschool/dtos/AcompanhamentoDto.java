@@ -4,6 +4,7 @@ import com.example.labschool.models.AlunoModel;
 import com.example.labschool.models.PedagogoModel;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+
 import java.util.Date;
 
 public record AcompanhamentoDto(

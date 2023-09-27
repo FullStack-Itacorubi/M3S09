@@ -1,13 +1,9 @@
 package com.example.labschool.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
-import jakarta.persistence.Temporal;
-import jakarta.persistence.TemporalType;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import org.hibernate.validator.constraints.Range;
+
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
@@ -20,16 +16,25 @@ public class AlunoModel {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID id;
-    
+
+    @NotBlank
+    @Column(nullable = false)
     private String nome;
-    
+
+    @NotBlank
+    @Column(length = 16, nullable = false)
     private String telefone;
     
     @Temporal(TemporalType.DATE)
+    @Column(nullable = false)
     private Date dataNascimento;
-    
+
+    @NotBlank
+    @Column(length = 14, nullable = false)
     private String cpf;
 
+    @Range(min = 0, max = 100)
+    @Column(nullable = false)
     private Integer nota;
     
     @OneToMany(mappedBy = "aluno")
