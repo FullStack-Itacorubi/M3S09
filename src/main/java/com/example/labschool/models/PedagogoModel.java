@@ -1,34 +1,49 @@
 package com.example.labschool.models;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
 @Entity
-@Table(name="TB_PEDAGOGO")
+@Table(name = "TB_PEDAGOGO")
 public class PedagogoModel {
-   
-   @Id
-   @GeneratedValue(strategy = GenerationType.AUTO)
-   private UUID id;
-   
-   private String nome;
-   
-   private String telefone;
-   
-   @Temporal(TemporalType.DATE)
-   private Date dataNascimento;
-   
-   private String cpf;
-   
-   private String email;
-   
-   private String senha;
-   
-   @OneToMany(mappedBy = "pedagogo")
-   private List<AcompanhamentoPedagogicoModel> acompanhamentoPedagogicoModel;
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private UUID id;
+
+    @NotBlank
+    @Column(nullable = false)
+    private String nome;
+
+    @NotBlank
+    @Column(length = 16, nullable = false)
+    private String telefone;
+
+    @Temporal(TemporalType.DATE)
+    @Column(nullable = false)
+    private Date dataNascimento;
+
+    @NotBlank
+    @Column(length = 14, nullable = false)
+    private String cpf;
+
+    @Email
+    @NotBlank
+    @Column(nullable = false)
+    private String email;
+
+    @NotBlank
+    @Column(length = 8, nullable = false)
+    private String senha;
+
+    @OneToMany(mappedBy = "pedagogo")
+    private List<AcompanhamentoPedagogicoModel> acompanhamentoPedagogicoModel;
 
     public UUID getId() {
         return id;

@@ -18,6 +18,7 @@ public class AlunoFixture {
         }
         return alunos;
     }
+
     public static AlunoModel criarAlunoValido() {
         AlunoModel aluno = new AlunoModel();
         aluno.setNome(faker.name().name());
