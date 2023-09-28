@@ -21,7 +21,6 @@ public record AlunoDto(
 
         @NotNull(message = "O campo Data de nascimento é obrigatorio.")
         @DateTimeFormat(pattern = "yyyy-MM-dd")
-//        @JsonFormat(pattern = "yyyy-MM-dd", timezone = "UTC-0")
         LocalDate dataNascimento,
 
         @NotBlank(message = "O campo é CPF obrigatorio")

@@ -4,7 +4,6 @@ import com.example.labschool.dtos.AlunoDto;
 import com.example.labschool.fixtures.AlunoFixture;
 import com.example.labschool.models.AlunoModel;
 import com.example.labschool.repositories.AlunoRepository;
-import com.example.labschool.utils.DateUtil;
 import com.example.labschool.utils.JsonUtil;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
@@ -48,8 +47,7 @@ public class AlunoControllerTest {
                         status().isCreated(),
                         content().contentType(MediaType.APPLICATION_JSON),
                         jsonPath("$.nome").value(requestDto.nome()),
-                        jsonPath("$.dataNascimento").value(requestDto.dataNascimento()),
-//                        jsonPath("$.dataNascimento").value(DateUtil.dataParaString(requestDto.dataNascimento())),
+                        jsonPath("$.dataNascimento").value(requestDto.dataNascimento().toString()),
                         jsonPath("$.telefone").value(requestDto.telefone()),
                         jsonPath("$.cpf").value(requestDto.cpf()),
                         jsonPath("$.nota").value(requestDto.nota())
@@ -69,7 +67,7 @@ public class AlunoControllerTest {
                         status().isOk(),
                         content().contentType(MediaType.APPLICATION_JSON),
                         jsonPath("$.[0].nome").value(aluno1.getNome()),
-//                        jsonPath("$.[0].dataNascimento").value(DateUtil.dataParaString(aluno1.getDataNascimento())),
+                        jsonPath("$.[0].dataNascimento").value(aluno1.getDataNascimento().toString()),
                         jsonPath("$.[0].telefone").value(aluno1.getTelefone()),
                         jsonPath("$.[0].cpf").value(aluno1.getCpf()),
                         jsonPath("$.[0].nota").value(aluno1.getNota()),
@@ -94,7 +92,7 @@ public class AlunoControllerTest {
                         status().isOk(),
                         content().contentType(MediaType.APPLICATION_JSON),
                         jsonPath("$.nome").value(aluno.getNome()),
-//                        jsonPath("$.dataNascimento").value(DateUtil.dataParaString(aluno.getDataNascimento())),
+                        jsonPath("$.dataNascimento").value(aluno.getDataNascimento().toString()),
                         jsonPath("$.telefone").value(aluno.getTelefone()),
                         jsonPath("$.cpf").value(aluno.getCpf()),
                         jsonPath("$.nota").value(aluno.getNota())
@@ -121,7 +119,7 @@ public class AlunoControllerTest {
                         status().isOk(),
                         content().contentType(MediaType.APPLICATION_JSON),
                         jsonPath("$.nome").value(requestDto.nome()),
-//                        jsonPath("$.dataNascimento").value(DateUtil.dataParaString(requestDto.dataNascimento())),
+                        jsonPath("$.dataNascimento").value(requestDto.dataNascimento().toString()),
                         jsonPath("$.telefone").value(requestDto.telefone()),
                         jsonPath("$.cpf").value(requestDto.cpf()),
                         jsonPath("$.nota").value(requestDto.nota())
