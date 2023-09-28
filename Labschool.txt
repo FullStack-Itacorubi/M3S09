@@ -16726,3 +16726,353 @@ Caused by: org.hibernate.HibernateException: Unable to determine Dialect without
 [34mINFO [0;39m 27-09-2023 - 20:12:29.064 [SpringApplicationShutdownHook] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
 [34mINFO [0;39m 27-09-2023 - 20:12:29.073 [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 [34mINFO [0;39m 27-09-2023 - 20:12:29.230 [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+[34mINFO [0;39m 27-09-2023 - 20:53:19.781 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 12142 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 20:53:19.783 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[31mWARN [0;39m 27-09-2023 - 20:53:20.085 [main] o.s.w.c.s.GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'alunoController': Unsatisfied dependency expressed through field 'alunoRepository': No qualifying bean of type 'com.example.labschool.repositories.AlunoRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[34mINFO [0;39m 27-09-2023 - 20:53:20.087 [main] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[1;31mERROR[0;39m 27-09-2023 - 20:53:20.097 [main] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field alunoRepository in com.example.labschool.controllers.AlunoController required a bean of type 'com.example.labschool.repositories.AlunoRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.example.labschool.repositories.AlunoRepository' in your configuration.
+
+[1;31mERROR[0;39m 27-09-2023 - 20:53:20.100 [main] o.s.test.context.TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [com.example.labschool.controllers.AlunoControllerTest@5e048149]
+java.lang.IllegalStateException: Failed to load ApplicationContext for [WebMergedContextConfiguration@29eda4f8 testClass = com.example.labschool.controllers.AlunoControllerTest, locations = [], classes = [com.example.labschool.LabschoolApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceLocations = [], propertySourceProperties = ["org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper=true"], contextCustomizers = [[ImportsContextCustomizer@1b9776f5 key = [org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration, org.springframework.boot.autoconfigure.context.MessageSourceAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.autoconfigure.freemarker.FreeMarkerAutoConfiguration, org.springframework.boot.autoconfigure.groovy.template.GroovyTemplateAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.hateoas.HypermediaAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.jsonb.JsonbAutoConfiguration, org.springframework.boot.autoconfigure.mustache.MustacheAutoConfiguration, org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration, org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration, org.springframework.boot.test.autoconfigure.web.reactive.WebTestClientAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@2e385cce, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@2a7f1f10, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.OverrideAutoConfigurationContextCustomizerFactory$DisableAutoConfigurationContextCustomizer@2cf3d63b, org.springframework.boot.test.autoconfigure.actuate.observability.ObservabilityContextCustomizerFactory$DisableObservabilityContextCustomizer@1f, org.springframework.boot.test.autoconfigure.filter.TypeExcludeFiltersContextCustomizer@4fc9a052, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@2aa74985, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizer@305ffe9e, org.springframework.boot.test.context.SpringBootTestAnnotation@a2f3537e], resourceBasePath = "src/main/webapp", contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:143)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:127)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:141)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:97)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:241)
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:138)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$10(ClassBasedTestDescriptor.java:377)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:382)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$11(ClassBasedTestDescriptor.java:377)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1625)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:310)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:734)
+	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:762)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:376)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$6(ClassBasedTestDescriptor.java:289)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:288)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$4(ClassBasedTestDescriptor.java:278)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$5(ClassBasedTestDescriptor.java:277)
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:31)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:105)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:104)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:68)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:53)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'alunoController': Unsatisfied dependency expressed through field 'alunoRepository': No qualifying bean of type 'com.example.labschool.repositories.AlunoRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:716)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:696)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:145)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:483)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1416)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:597)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:520)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:973)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:942)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:608)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:436)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$3(SpringBootContextLoader.java:137)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58)
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46)
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1406)
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:545)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:137)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:108)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:187)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:119)
+	... 72 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.example.labschool.repositories.AlunoRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1824)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1383)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1337)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:713)
+	... 97 common frames omitted
+[34mINFO [0;39m 27-09-2023 - 20:57:54.159 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 12564 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 20:57:54.161 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 20:57:55.164 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 20:57:55.165 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 20:57:55.165 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+[34mINFO [0;39m 27-09-2023 - 20:57:55.179 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.207 seconds (process running for 1.753)
+[31mWARN [0;39m 27-09-2023 - 20:57:55.305 [main] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<com.example.labschool.models.AlunoModel> com.example.labschool.controllers.AlunoController.saveAluno(com.example.labschool.dtos.AlunoDto)]
+[34mINFO [0;39m 27-09-2023 - 20:59:26.495 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 12707 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 20:59:26.495 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 20:59:27.457 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 20:59:27.457 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 20:59:27.458 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+[34mINFO [0;39m 27-09-2023 - 20:59:27.471 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.123 seconds (process running for 1.601)
+[31mWARN [0;39m 27-09-2023 - 20:59:27.613 [main] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<com.example.labschool.models.AlunoModel> com.example.labschool.controllers.AlunoController.saveAluno(com.example.labschool.dtos.AlunoDto)]
+[34mINFO [0;39m 27-09-2023 - 21:03:40.688 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 13101 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:03:40.689 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:03:41.689 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:03:41.689 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:03:41.690 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+[34mINFO [0;39m 27-09-2023 - 21:03:41.705 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.168 seconds (process running for 1.67)
+[31mWARN [0;39m 27-09-2023 - 21:03:41.923 [main] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.labschool.models.AlunoModel> com.example.labschool.controllers.AlunoController.saveAluno(com.example.labschool.dtos.AlunoDto) with 2 errors: [Field error in object 'alunoDto' on field 'cpf': rejected value [24118575868]; codes [Size.alunoDto.cpf,Size.cpf,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [alunoDto.cpf,cpf]; arguments []; default message [cpf],14,14]; default message [size must be between 14 and 14]] [Field error in object 'alunoDto' on field 'telefone': rejected value [(61) 93482-9825]; codes [Size.alunoDto.telefone,Size.telefone,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [alunoDto.telefone,telefone]; arguments []; default message [telefone],16,16]; default message [size must be between 16 and 16]] ]
+[34mINFO [0;39m 27-09-2023 - 21:04:41.490 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 13184 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:04:41.491 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:04:42.482 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:04:42.483 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:04:42.483 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+[34mINFO [0;39m 27-09-2023 - 21:04:42.498 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.193 seconds (process running for 1.791)
+[31mWARN [0;39m 27-09-2023 - 21:04:51.014 [main] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.labschool.models.AlunoModel> com.example.labschool.controllers.AlunoController.saveAluno(com.example.labschool.dtos.AlunoDto) with 2 errors: [Field error in object 'alunoDto' on field 'telefone': rejected value [(79) 91054-4851]; codes [Size.alunoDto.telefone,Size.telefone,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [alunoDto.telefone,telefone]; arguments []; default message [telefone],16,16]; default message [size must be between 16 and 16]] [Field error in object 'alunoDto' on field 'cpf': rejected value [73605063446]; codes [Size.alunoDto.cpf,Size.cpf,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [alunoDto.cpf,cpf]; arguments []; default message [cpf],14,14]; default message [size must be between 14 and 14]] ]
+[34mINFO [0;39m 27-09-2023 - 21:05:01.019 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 13216 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:05:01.020 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:05:01.995 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:05:01.995 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:05:01.996 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+[34mINFO [0;39m 27-09-2023 - 21:05:02.014 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.154 seconds (process running for 1.721)
+[31mWARN [0;39m 27-09-2023 - 21:05:03.203 [main] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.labschool.models.AlunoModel> com.example.labschool.controllers.AlunoController.saveAluno(com.example.labschool.dtos.AlunoDto) with 2 errors: [Field error in object 'alunoDto' on field 'telefone': rejected value [(51) 96209-6646]; codes [Size.alunoDto.telefone,Size.telefone,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [alunoDto.telefone,telefone]; arguments []; default message [telefone],16,16]; default message [size must be between 16 and 16]] [Field error in object 'alunoDto' on field 'cpf': rejected value [84751800000]; codes [Size.alunoDto.cpf,Size.cpf,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [alunoDto.cpf,cpf]; arguments []; default message [cpf],14,14]; default message [size must be between 14 and 14]] ]
+[34mINFO [0;39m 27-09-2023 - 21:05:57.353 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 13294 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:05:57.354 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:05:58.338 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:05:58.338 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:05:58.339 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+[34mINFO [0;39m 27-09-2023 - 21:05:58.354 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.147 seconds (process running for 1.626)
+[31mWARN [0;39m 27-09-2023 - 21:05:58.554 [main] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.labschool.models.AlunoModel> com.example.labschool.controllers.AlunoController.saveAluno(com.example.labschool.dtos.AlunoDto) with 2 errors: [Field error in object 'alunoDto' on field 'cpf': rejected value [30813805619]; codes [Size.alunoDto.cpf,Size.cpf,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [alunoDto.cpf,cpf]; arguments []; default message [cpf],14,14]; default message [size must be between 14 and 14]] [Field error in object 'alunoDto' on field 'telefone': rejected value [(18) 90036-1906]; codes [Size.alunoDto.telefone,Size.telefone,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [alunoDto.telefone,telefone]; arguments []; default message [telefone],16,16]; default message [size must be between 16 and 16]] ]
+[34mINFO [0;39m 27-09-2023 - 21:06:50.968 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 13372 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:06:50.969 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:06:52.034 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:06:52.034 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:06:52.035 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+[34mINFO [0;39m 27-09-2023 - 21:06:52.048 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.276 seconds (process running for 1.963)
+[31mWARN [0;39m 27-09-2023 - 21:07:04.145 [main] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.labschool.models.AlunoModel> com.example.labschool.controllers.AlunoController.saveAluno(com.example.labschool.dtos.AlunoDto) with 2 errors: [Field error in object 'alunoDto' on field 'telefone': rejected value [(12) 93185-9003]; codes [Size.alunoDto.telefone,Size.telefone,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [alunoDto.telefone,telefone]; arguments []; default message [telefone],16,16]; default message [size must be between 16 and 16]] [Field error in object 'alunoDto' on field 'cpf': rejected value [54561851640]; codes [Size.alunoDto.cpf,Size.cpf,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [alunoDto.cpf,cpf]; arguments []; default message [cpf],14,14]; default message [size must be between 14 and 14]] ]
+[34mINFO [0;39m 27-09-2023 - 21:07:27.540 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 13438 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:07:27.541 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:07:28.542 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:07:28.542 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:07:28.543 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+[34mINFO [0;39m 27-09-2023 - 21:07:28.556 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.163 seconds (process running for 1.659)
+[31mWARN [0;39m 27-09-2023 - 21:07:28.753 [main] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.labschool.models.AlunoModel> com.example.labschool.controllers.AlunoController.saveAluno(com.example.labschool.dtos.AlunoDto): [Field error in object 'alunoDto' on field 'cpf': rejected value [47321104281]; codes [Size.alunoDto.cpf,Size.cpf,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [alunoDto.cpf,cpf]; arguments []; default message [cpf],14,14]; default message [size must be between 14 and 14]] ]
+[34mINFO [0;39m 27-09-2023 - 21:07:55.616 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 13478 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:07:55.616 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:07:56.568 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:07:56.568 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:07:56.569 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+[34mINFO [0;39m 27-09-2023 - 21:07:56.584 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.13 seconds (process running for 1.69)
+[31mWARN [0;39m 27-09-2023 - 21:08:29.794 [main] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.labschool.models.AlunoModel> com.example.labschool.controllers.AlunoController.saveAluno(com.example.labschool.dtos.AlunoDto): [Field error in object 'alunoDto' on field 'cpf': rejected value [87334427890]; codes [Size.alunoDto.cpf,Size.cpf,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [alunoDto.cpf,cpf]; arguments []; default message [cpf],14,14]; default message [size must be between 14 and 14]] ]
+[34mINFO [0;39m 27-09-2023 - 21:10:04.900 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 13724 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:10:04.901 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:10:05.929 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:10:05.929 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:10:05.930 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+[34mINFO [0;39m 27-09-2023 - 21:10:05.945 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.239 seconds (process running for 2.183)
+[31mWARN [0;39m 27-09-2023 - 21:10:42.367 [main] o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.example.labschool.models.AlunoModel> com.example.labschool.controllers.AlunoController.saveAluno(com.example.labschool.dtos.AlunoDto): [Field error in object 'alunoDto' on field 'cpf': rejected value [58457378775]; codes [Size.alunoDto.cpf,Size.cpf,Size.java.lang.String,Size]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [alunoDto.cpf,cpf]; arguments []; default message [cpf],14,14]; default message [size must be between 14 and 14]] ]
+[34mINFO [0;39m 27-09-2023 - 21:10:49.487 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 13836 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:10:49.487 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:10:50.445 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:10:50.446 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:10:50.446 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+[34mINFO [0;39m 27-09-2023 - 21:10:50.460 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.139 seconds (process running for 1.724)
+[34mINFO [0;39m 27-09-2023 - 21:11:12.446 [main] c.e.l.controllers.AlunoController - Instância Pedagogo cadastrada: Ana Beatriz Gentil Jr.
+[34mINFO [0;39m 27-09-2023 - 21:12:26.092 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 13978 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:12:26.093 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:12:27.082 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:12:27.082 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:12:27.083 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+[34mINFO [0;39m 27-09-2023 - 21:12:27.096 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.158 seconds (process running for 1.665)
+[34mINFO [0;39m 27-09-2023 - 21:12:27.296 [main] c.e.l.controllers.AlunoController - Instância Pedagogo cadastrada: Bryan Bonfim
+[34mINFO [0;39m 27-09-2023 - 21:17:49.717 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 14498 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:17:49.718 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:17:50.731 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:17:50.731 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:17:50.732 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+[34mINFO [0;39m 27-09-2023 - 21:17:50.749 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.185 seconds (process running for 1.689)
+[34mINFO [0;39m 27-09-2023 - 21:17:50.950 [main] c.e.l.controllers.AlunoController - Instância Pedagogo cadastrada: Lorena Arantes
+[34mINFO [0;39m 27-09-2023 - 21:19:15.821 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 14623 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:19:15.822 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:19:16.807 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:19:16.808 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:19:16.808 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+[34mINFO [0;39m 27-09-2023 - 21:19:16.823 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.153 seconds (process running for 1.652)
+[34mINFO [0;39m 27-09-2023 - 21:19:17.032 [main] c.e.l.controllers.AlunoController - Instância Pedagogo cadastrada: Isabella Álvares
+[34mINFO [0;39m 27-09-2023 - 21:21:26.905 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 14807 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:21:26.906 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:21:27.906 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:21:27.906 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:21:27.907 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+[34mINFO [0;39m 27-09-2023 - 21:21:27.921 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.171 seconds (process running for 1.707)
+[34mINFO [0;39m 27-09-2023 - 21:21:28.112 [main] c.e.l.controllers.AlunoController - Instância Pedagogo cadastrada: Norberto da Cunha
+[34mINFO [0;39m 27-09-2023 - 21:21:43.487 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 14837 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:21:43.488 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:21:44.471 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:21:44.471 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:21:44.472 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+[34mINFO [0;39m 27-09-2023 - 21:21:44.485 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.147 seconds (process running for 1.661)
+[34mINFO [0;39m 27-09-2023 - 21:21:44.682 [main] c.e.l.controllers.AlunoController - Instância Pedagogo cadastrada: Sr. Sílvia Barreira
+[34mINFO [0;39m 27-09-2023 - 21:23:53.169 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 15024 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:23:53.170 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:23:54.161 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:23:54.161 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:23:54.161 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+[34mINFO [0;39m 27-09-2023 - 21:23:54.176 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.156 seconds (process running for 1.663)
+[34mINFO [0;39m 27-09-2023 - 21:23:54.387 [main] c.e.l.controllers.AlunoController - Instância Pedagogo cadastrada: Theo Godinho
+[34mINFO [0;39m 27-09-2023 - 21:33:18.224 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 15921 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:33:18.225 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:33:19.247 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:33:19.248 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:33:19.248 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+[34mINFO [0;39m 27-09-2023 - 21:33:19.261 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.202 seconds (process running for 1.708)
+[34mINFO [0;39m 27-09-2023 - 21:33:19.454 [main] c.e.l.controllers.AlunoController - Instância Pedagogo cadastrada: Erick Xavier
+[34mINFO [0;39m 27-09-2023 - 21:34:24.252 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 16015 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:34:24.253 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:34:25.250 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:34:25.250 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:34:25.251 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+[34mINFO [0;39m 27-09-2023 - 21:34:25.267 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.187 seconds (process running for 1.779)
+[34mINFO [0;39m 27-09-2023 - 21:34:44.985 [main] c.e.l.controllers.AlunoController - Instância Pedagogo cadastrada: Eduarda Menendes
+[34mINFO [0;39m 27-09-2023 - 21:37:11.218 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 16263 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:37:11.219 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:37:12.280 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:37:12.280 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:37:12.281 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+[34mINFO [0;39m 27-09-2023 - 21:37:12.295 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.247 seconds (process running for 1.776)
+[34mINFO [0;39m 27-09-2023 - 21:37:12.501 [main] c.e.l.controllers.AlunoController - Instância Pedagogo cadastrada: André Brites Filho
+[34mINFO [0;39m 27-09-2023 - 21:38:40.222 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 16402 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:38:40.223 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:38:41.275 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:38:41.275 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:38:41.276 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+[34mINFO [0;39m 27-09-2023 - 21:38:41.291 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.234 seconds (process running for 1.774)
+[34mINFO [0;39m 27-09-2023 - 21:38:41.502 [main] c.e.l.controllers.AlunoController - Instância Pedagogo cadastrada: Deneval Alves
+[34mINFO [0;39m 27-09-2023 - 21:40:33.796 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 16631 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:40:33.797 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:40:34.854 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:40:34.854 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:40:34.854 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+[34mINFO [0;39m 27-09-2023 - 21:40:34.869 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.277 seconds (process running for 1.859)
+[34mINFO [0;39m 27-09-2023 - 21:40:35.069 [main] c.e.l.controllers.AlunoController - Instância Pedagogo cadastrada: Alessandra Peixoto
+[34mINFO [0;39m 27-09-2023 - 21:44:37.014 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 17247 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:44:37.015 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:44:38.076 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:44:38.076 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:44:38.077 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+[34mINFO [0;39m 27-09-2023 - 21:44:38.093 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.237 seconds (process running for 1.753)
+[34mINFO [0;39m 27-09-2023 - 21:44:38.224 [main] c.e.l.controllers.AlunoController - Listagem Alunos Concluída.
+[34mINFO [0;39m 27-09-2023 - 21:46:00.948 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 17370 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:46:00.949 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:46:01.993 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:46:01.994 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:46:01.994 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+[34mINFO [0;39m 27-09-2023 - 21:46:02.012 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.224 seconds (process running for 1.743)
+[34mINFO [0;39m 27-09-2023 - 21:46:02.142 [main] c.e.l.controllers.AlunoController - Listagem Alunos Concluída.
+[34mINFO [0;39m 27-09-2023 - 21:47:01.190 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 17461 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:47:01.191 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:47:02.194 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:47:02.195 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:47:02.195 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+[34mINFO [0;39m 27-09-2023 - 21:47:02.210 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.184 seconds (process running for 1.709)
+[34mINFO [0;39m 27-09-2023 - 21:47:02.341 [main] c.e.l.controllers.AlunoController - Listagem Alunos Concluída.
+[34mINFO [0;39m 27-09-2023 - 21:47:45.235 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 17529 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:47:45.235 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:47:46.245 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:47:46.245 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:47:46.246 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+[34mINFO [0;39m 27-09-2023 - 21:47:46.261 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.185 seconds (process running for 1.691)
+[34mINFO [0;39m 27-09-2023 - 21:47:46.387 [main] c.e.l.controllers.AlunoController - Listagem Alunos Concluída.
+[34mINFO [0;39m 27-09-2023 - 21:55:35.220 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 18238 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:55:35.221 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:55:36.332 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:55:36.333 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:55:36.334 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+[34mINFO [0;39m 27-09-2023 - 21:55:36.353 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.328 seconds (process running for 1.907)
+[34mINFO [0;39m 27-09-2023 - 21:55:36.504 [main] c.e.l.controllers.AlunoController - Consulta Aluno [43731d35-5fe4-40be-959b-1c77b9be6f5e] concluída
+[34mINFO [0;39m 27-09-2023 - 21:57:12.907 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 18382 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:57:12.908 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:57:13.927 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:57:13.928 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:57:13.928 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+[34mINFO [0;39m 27-09-2023 - 21:57:13.943 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.191 seconds (process running for 1.708)
+[34mINFO [0;39m 27-09-2023 - 21:57:14.065 [main] c.e.l.controllers.AlunoController - Consulta Aluno [87781399-f110-4253-9946-0e87712db7f6] concluída
+[34mINFO [0;39m 27-09-2023 - 21:57:16.432 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 18391 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 21:57:16.433 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 21:57:17.434 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 21:57:17.434 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 21:57:17.435 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+[34mINFO [0;39m 27-09-2023 - 21:57:17.450 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.171 seconds (process running for 1.705)
+[34mINFO [0;39m 27-09-2023 - 21:57:17.582 [main] c.e.l.controllers.AlunoController - Consulta Aluno [8c51fde6-1fa3-40e4-af6a-72f325eb55c4] concluída
+[34mINFO [0;39m 27-09-2023 - 22:02:33.289 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 18833 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 22:02:33.290 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 22:02:34.292 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 22:02:34.292 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 22:02:34.292 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 0 ms
+[34mINFO [0;39m 27-09-2023 - 22:02:34.306 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.169 seconds (process running for 1.67)
+[34mINFO [0;39m 27-09-2023 - 22:02:34.511 [main] c.e.l.controllers.AlunoController - Aluno de ID[d7a3f3cf-e58f-47ee-908b-16d7aea64f8f] atualizado na base de dados
+[34mINFO [0;39m 27-09-2023 - 22:03:06.203 [main] c.e.l.c.AlunoControllerTest - Starting AlunoControllerTest using Java 18.0.2 with PID 18893 (started by gabriel in /Users/gabriel/Projects/wsSenai/wsFuturoDev-Itacorubi/M3S09)
+[34mINFO [0;39m 27-09-2023 - 22:03:06.204 [main] c.e.l.c.AlunoControllerTest - No active profile set, falling back to 1 default profile: "default"
+[34mINFO [0;39m 27-09-2023 - 22:03:07.222 [main] o.s.b.t.m.w.SpringBootMockServletContext - Initializing Spring TestDispatcherServlet ''
+[34mINFO [0;39m 27-09-2023 - 22:03:07.222 [main] o.s.t.w.s.TestDispatcherServlet - Initializing Servlet ''
+[34mINFO [0;39m 27-09-2023 - 22:03:07.223 [main] o.s.t.w.s.TestDispatcherServlet - Completed initialization in 1 ms
+[34mINFO [0;39m 27-09-2023 - 22:03:07.238 [main] c.e.l.c.AlunoControllerTest - Started AlunoControllerTest in 1.186 seconds (process running for 1.694)
+[34mINFO [0;39m 27-09-2023 - 22:03:07.447 [main] c.e.l.controllers.AlunoController - Aluno de ID[81425347-c147-432f-a3c4-fcc77623cffe] atualizado na base de dados

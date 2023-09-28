@@ -1,5 +1,6 @@
 package com.example.labschool.fixtures;
 
+import com.example.labschool.dtos.AlunoDto;
 import com.example.labschool.models.AlunoModel;
 import net.datafaker.Faker;
 
@@ -24,10 +25,13 @@ public class AlunoFixture {
         aluno.setNome(faker.name().name());
         aluno.setTelefone(faker.phoneNumber().cellPhone());
         aluno.setDataNascimento(faker.date().birthday(10, 100));
-        aluno.setCpf(faker.cpf().valid(false));
+        aluno.setCpf(faker.cpf().valid());
         aluno.setNota(faker.number().numberBetween(0, 10));
 
         return aluno;
     }
 
+    public static AlunoDto criarAlunoDtoValido() {
+        return new AlunoDto(criarAlunoValido());
+    }
 }

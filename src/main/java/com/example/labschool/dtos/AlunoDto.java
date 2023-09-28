@@ -1,6 +1,7 @@
 package com.example.labschool.dtos;
 
 import com.example.labschool.models.AlunoModel;
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.TemporalType;
 import jakarta.validation.constraints.NotBlank;
@@ -18,12 +19,13 @@ public record AlunoDto(
         String nome,
         
         @NotBlank(message = "O campo Telefone é obrigatório.") 
-        @Size(min=16, max=16) 
+        @Size(min=15, max=16)
         String telefone,
         
         @NotNull(message = "O campo Data de nascimento é obrigatorio.")
         @Temporal(TemporalType.DATE)
         @DateTimeFormat(pattern = "yyyy-MM-dd")
+        @JsonFormat(pattern = "yyyy-MM-dd")
         Date dataNascimento,
         
         @NotBlank(message = "O campo é CPF obrigatorio") 

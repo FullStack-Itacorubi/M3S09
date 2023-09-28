@@ -18,15 +18,15 @@ import java.util.Optional;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("alunos")
 public class AlunoController {
-    
+
     @Autowired
     private AlunoRepository alunoRepository;
 
     private static Logger LOGGER = LoggerFactory.getLogger(AlunoController.class);
     
-    @PostMapping("aluno")
+    @PostMapping
     public ResponseEntity<AlunoModel> saveAluno(@RequestBody @Valid AlunoDto alunoDto){
         var alunoModel = new AlunoModel();
         
@@ -35,13 +35,13 @@ public class AlunoController {
         return ResponseEntity.status(HttpStatus.CREATED).body(alunoRepository.save(alunoModel));
     } 
     
-    @GetMapping("alunos")
+    @GetMapping
     public ResponseEntity<List<AlunoModel>> getAllAlunos(){
         LOGGER.info("Listagem Alunos Concluída.");
         return ResponseEntity.status(HttpStatus.OK).body(alunoRepository.findAll());
     }
     
-    @GetMapping("aluno/{id}")
+    @GetMapping("{id}")
     public ResponseEntity<Object> getOneAluno(@PathVariable(value="id") UUID id){
         Optional<AlunoModel> alunoO = alunoRepository.findById(id);
         if(alunoO.isEmpty()){
@@ -54,7 +54,7 @@ public class AlunoController {
         return ResponseEntity.status(HttpStatus.OK).body(alunoDto.get());
     }
     
-    @PutMapping("aluno/{id}")
+    @PutMapping("{id}")
     public ResponseEntity<Object> updateAluno(@PathVariable(value="id") UUID id,
                                                     @RequestBody @Valid AlunoDto alunoDto){  
         Optional<AlunoModel> alunoO = alunoRepository.findById(id);
@@ -68,7 +68,7 @@ public class AlunoController {
         return ResponseEntity.status(HttpStatus.OK).body(alunoRepository.save(AlunoModel));        
     }
     
-    @DeleteMapping("aluno/{id}")
+    @DeleteMapping("{id}")
     public ResponseEntity<Object> deleteAluno(@PathVariable(value="id") UUID id){
         Optional<AlunoModel> alunoO = alunoRepository.findById(id);
         if(alunoO.isEmpty()){
@@ -81,7 +81,7 @@ public class AlunoController {
         return ResponseEntity.status(HttpStatus.OK).body("Aluno deleted successfully.");
     }
 
-    @GetMapping("alunos/name")
+    @GetMapping("name")
     public ResponseEntity<List<AlunoSeletorDto>> getAluno(){
         LOGGER.info("Listagem de Alunos por ID e NOME concluída");
         return ResponseEntity.status(HttpStatus.OK).body(alunoRepository.findByIdName());

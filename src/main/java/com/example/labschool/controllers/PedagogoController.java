@@ -19,7 +19,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/")
+@RequestMapping("pedagogos")
 public class PedagogoController {
     
     @Autowired
@@ -27,7 +27,7 @@ public class PedagogoController {
     
     private static Logger LOGGER = LoggerFactory.getLogger(PedagogoController.class);
     
-    @PostMapping("pedagogo")
+    @PostMapping
     public ResponseEntity<PedagogoModel> savePedagogo(@RequestBody @Valid PedagogoDto pedagogoDto){
         var pedagogoModel = new PedagogoModel();
         
@@ -36,14 +36,14 @@ public class PedagogoController {
         return ResponseEntity.status(HttpStatus.CREATED).body(pedagogoRepository.save(pedagogoModel));
     }
     
-    @GetMapping("pedagogos")
+    @GetMapping
     public ResponseEntity<List<PedagogoDto>> getAllPedagogos(){
         LOGGER.info("Listagem Pedagogos Concluída.");
         return ResponseEntity.status(HttpStatus.OK).body(pedagogoRepository.findAll()
                 .stream().map(PedagogoDto::new).toList());
     }
     
-    @GetMapping("pedagogos/{id}")
+    @GetMapping("{id}")
     public ResponseEntity<Object> getOnePedagogo(@PathVariable(value="id") UUID id){
         Optional<PedagogoModel> pedagogoO = pedagogoRepository.findById(id);
         
@@ -57,7 +57,7 @@ public class PedagogoController {
         return ResponseEntity.status(HttpStatus.OK).body(pedagogoDto.get());  
     }
     
-    @PutMapping("pedagogo/{id}")
+    @PutMapping("{id}")
     public ResponseEntity<Object> updatePedagogo(@PathVariable(value="id") UUID id,
                                                      @RequestBody @Valid PedagogoDto pedagogoDto){
         Optional<PedagogoModel> pedagogoO = pedagogoRepository.findById(id);
@@ -72,7 +72,7 @@ public class PedagogoController {
        return ResponseEntity.status(HttpStatus.OK).body(pedagogoRepository.save(pedagogoModel));
     }
 
-    @DeleteMapping("pedagogo/{id}")
+    @DeleteMapping("{id}")
     public ResponseEntity<Object> deletePedagogo(@PathVariable(value="id") UUID id){
         Optional<PedagogoModel> pedagogoO = pedagogoRepository.findById(id);
         if(pedagogoO.isEmpty()){
@@ -85,7 +85,7 @@ public class PedagogoController {
         return ResponseEntity.status(HttpStatus.OK).body("Pedagogo deleted succesfully.");    
     }
     
-    @GetMapping("pedagogos/name")
+    @GetMapping("name")
     public ResponseEntity<List<PedagogoSeletorDto>> getPedagogo(){
         LOGGER.info("Listagem de Pedagogos por ID e NOME concluída");
         return  ResponseEntity.status(HttpStatus.OK).body(pedagogoRepository.findByIdName());
