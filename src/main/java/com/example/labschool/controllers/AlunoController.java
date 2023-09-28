@@ -29,11 +29,11 @@ public class AlunoController {
     @PostMapping
     public ResponseEntity<AlunoModel> saveAluno(@RequestBody @Valid AlunoDto alunoDto){
         var alunoModel = new AlunoModel();
-        
+
         BeanUtils.copyProperties(alunoDto, alunoModel);
         LOGGER.info("Instância Pedagogo cadastrada: " + alunoDto.nome());
         return ResponseEntity.status(HttpStatus.CREATED).body(alunoRepository.save(alunoModel));
-    } 
+    }
     
     @GetMapping
     public ResponseEntity<List<AlunoModel>> getAllAlunos(){

@@ -4,10 +4,9 @@ import com.example.labschool.dtos.AlunoDto;
 import com.example.labschool.fixtures.AlunoFixture;
 import com.example.labschool.models.AlunoModel;
 import com.example.labschool.repositories.AlunoRepository;
+import com.example.labschool.utils.DateUtil;
 import com.example.labschool.utils.JsonUtil;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.ObjectWriter;
-import org.hamcrest.Matchers;
+import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -19,7 +18,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.UUID;
 
-import static org.mockito.ArgumentMatchers.*;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
@@ -49,6 +48,8 @@ public class AlunoControllerTest {
                         status().isCreated(),
                         content().contentType(MediaType.APPLICATION_JSON),
                         jsonPath("$.nome").value(requestDto.nome()),
+                        jsonPath("$.dataNascimento").value(requestDto.dataNascimento()),
+//                        jsonPath("$.dataNascimento").value(DateUtil.dataParaString(requestDto.dataNascimento())),
                         jsonPath("$.telefone").value(requestDto.telefone()),
                         jsonPath("$.cpf").value(requestDto.cpf()),
                         jsonPath("$.nota").value(requestDto.nota())
@@ -68,6 +69,7 @@ public class AlunoControllerTest {
                         status().isOk(),
                         content().contentType(MediaType.APPLICATION_JSON),
                         jsonPath("$.[0].nome").value(aluno1.getNome()),
+//                        jsonPath("$.[0].dataNascimento").value(DateUtil.dataParaString(aluno1.getDataNascimento())),
                         jsonPath("$.[0].telefone").value(aluno1.getTelefone()),
                         jsonPath("$.[0].cpf").value(aluno1.getCpf()),
                         jsonPath("$.[0].nota").value(aluno1.getNota()),
@@ -92,6 +94,7 @@ public class AlunoControllerTest {
                         status().isOk(),
                         content().contentType(MediaType.APPLICATION_JSON),
                         jsonPath("$.nome").value(aluno.getNome()),
+//                        jsonPath("$.dataNascimento").value(DateUtil.dataParaString(aluno.getDataNascimento())),
                         jsonPath("$.telefone").value(aluno.getTelefone()),
                         jsonPath("$.cpf").value(aluno.getCpf()),
                         jsonPath("$.nota").value(aluno.getNota())
@@ -118,10 +121,96 @@ public class AlunoControllerTest {
                         status().isOk(),
                         content().contentType(MediaType.APPLICATION_JSON),
                         jsonPath("$.nome").value(requestDto.nome()),
+//                        jsonPath("$.dataNascimento").value(DateUtil.dataParaString(requestDto.dataNascimento())),
                         jsonPath("$.telefone").value(requestDto.telefone()),
                         jsonPath("$.cpf").value(requestDto.cpf()),
                         jsonPath("$.nota").value(requestDto.nota())
                 );
+    }
+
+    @Nested
+    class PostInvalidTest {
+
+        @Test
+        public void nomeInvalidTest() throws Exception {
+            AlunoModel alunoModel = AlunoFixture.criarAlunoValido();
+            alunoModel.setNome(null);
+            AlunoDto requestDto = new AlunoDto(alunoModel);
+
+            when(alunoRepository.save(any())).thenReturn(alunoModel);
+
+            mockMvc.perform(
+                            post("/alunos")
+                                    .contentType(MediaType.APPLICATION_JSON)
+                                    .content(JsonUtil.objToJson(requestDto))
+                    )
+                    .andExpect(status().isBadRequest());
+        }
+
+        @Test
+        public void telefoneInvalidTest() throws Exception {
+            AlunoModel alunoModel = AlunoFixture.criarAlunoValido();
+            alunoModel.setTelefone(null);
+            AlunoDto requestDto = new AlunoDto(alunoModel);
+
+            when(alunoRepository.save(any())).thenReturn(alunoModel);
+
+            mockMvc.perform(
+                            post("/alunos")
+                                    .contentType(MediaType.APPLICATION_JSON)
+                                    .content(JsonUtil.objToJson(requestDto))
+                    )
+                    .andExpect(status().isBadRequest());
+        }
+
+        @Test
+        public void dataNascimentoInvalidTest() throws Exception {
+            AlunoModel alunoModel = AlunoFixture.criarAlunoValido();
+            alunoModel.setDataNascimento(null);
+            AlunoDto requestDto = new AlunoDto(alunoModel);
+
+            when(alunoRepository.save(any())).thenReturn(alunoModel);
+
+            mockMvc.perform(
+                            post("/alunos")
+                                    .contentType(MediaType.APPLICATION_JSON)
+                                    .content(JsonUtil.objToJson(requestDto))
+                    )
+                    .andExpect(status().isBadRequest());
+        }
+
+        @Test
+        public void cpfInvalidTest() throws Exception {
+            AlunoModel alunoModel = AlunoFixture.criarAlunoValido();
+            alunoModel.setCpf(null);
+            AlunoDto requestDto = new AlunoDto(alunoModel);
+
+            when(alunoRepository.save(any())).thenReturn(alunoModel);
+
+            mockMvc.perform(
+                            post("/alunos")
+                                    .contentType(MediaType.APPLICATION_JSON)
+                                    .content(JsonUtil.objToJson(requestDto))
+                    )
+                    .andExpect(status().isBadRequest());
+        }
+
+        @Test
+        public void notaInvalidTest() throws Exception {
+            AlunoModel alunoModel = AlunoFixture.criarAlunoValido();
+            alunoModel.setNota(null);
+            AlunoDto requestDto = new AlunoDto(alunoModel);
+
+            when(alunoRepository.save(any())).thenReturn(alunoModel);
+
+            mockMvc.perform(
+                            post("/alunos")
+                                    .contentType(MediaType.APPLICATION_JSON)
+                                    .content(JsonUtil.objToJson(requestDto))
+                    )
+                    .andExpect(status().isBadRequest());
+        }
+
     }
 
 }

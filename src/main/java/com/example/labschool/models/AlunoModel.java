@@ -1,9 +1,11 @@
 package com.example.labschool.models;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import org.hibernate.validator.constraints.Range;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
@@ -24,10 +26,11 @@ public class AlunoModel {
     @NotBlank
     @Column(length = 16, nullable = false)
     private String telefone;
-    
+
+    @JsonFormat(pattern = "yyyy-MM-dd")
     @Temporal(TemporalType.DATE)
     @Column(nullable = false)
-    private Date dataNascimento;
+    private LocalDate dataNascimento;
 
     @NotBlank
     @Column(length = 14, nullable = false)
@@ -64,11 +67,11 @@ public class AlunoModel {
         this.telefone = telefone;
     }
 
-    public Date getDataNascimento() {
+    public LocalDate getDataNascimento() {
         return dataNascimento;
     }
 
-    public void setDataNascimento(Date dataNascimento) {
+    public void setDataNascimento(LocalDate dataNascimento) {
         this.dataNascimento = dataNascimento;
     }
 

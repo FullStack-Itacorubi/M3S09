@@ -24,7 +24,7 @@ public class AlunoFixture {
         AlunoModel aluno = new AlunoModel();
         aluno.setNome(faker.name().name());
         aluno.setTelefone(faker.phoneNumber().cellPhone());
-        aluno.setDataNascimento(faker.date().birthday(10, 100));
+        aluno.setDataNascimento(faker.date().birthday(10, 100).toLocalDateTime().toLocalDate());
         aluno.setCpf(faker.cpf().valid());
         aluno.setNota(faker.number().numberBetween(0, 10));
 
