@@ -16,4 +16,5 @@ public interface AlunoRepository  extends JpaRepository<AlunoModel, UUID>{
         + " FROM AlunoModel al")
     List<AlunoSeletorDto> findByIdName();
 
+    List<AlunoModel> findByNomeContainingIgnoreCase(String nome);
 }

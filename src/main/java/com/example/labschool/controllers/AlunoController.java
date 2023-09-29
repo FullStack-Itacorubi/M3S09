@@ -46,7 +46,7 @@ public class AlunoController {
     }
 
     @PutMapping("{id}")
-    public ResponseEntity<Object> updateAluno(@PathVariable(value = "id") UUID id,
+    public ResponseEntity<?> updateAluno(@PathVariable(value = "id") UUID id,
                                               @RequestBody @Valid AlunoDto alunoDto) {
         try {
             return ResponseEntity.status(HttpStatus.OK).body(alunoService.save(id, alunoDto));
@@ -58,7 +58,7 @@ public class AlunoController {
     }
 
     @DeleteMapping("{id}")
-    public ResponseEntity<Object> deleteAluno(@PathVariable(value = "id") UUID id) {
+    public ResponseEntity<?> deleteAluno(@PathVariable(value = "id") UUID id) {
         try {
             return ResponseEntity.status(HttpStatus.OK).body(alunoService.deleteById(id));
         } catch (EntityNotFoundException e) {
@@ -69,7 +69,12 @@ public class AlunoController {
     }
 
     @GetMapping("name")
-    public ResponseEntity<List<AlunoSeletorDto>> getAluno() {
+    public ResponseEntity<?> getAluno() {
         return ResponseEntity.status(HttpStatus.OK).body(alunoService.findAllIdNome());
+    }
+
+    @GetMapping("nome/{nome}")
+    public ResponseEntity<?> getAlunoByNome(@PathVariable String nome) {
+        return ResponseEntity.status(HttpStatus.OK).body(alunoService.findByNome(nome));
     }
 }

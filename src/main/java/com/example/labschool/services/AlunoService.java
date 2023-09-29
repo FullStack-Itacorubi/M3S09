@@ -21,4 +21,5 @@ public interface AlunoService {
 
     boolean deleteById(UUID id);
 
+    List<AlunoModel> findByNome(String nome);
 }

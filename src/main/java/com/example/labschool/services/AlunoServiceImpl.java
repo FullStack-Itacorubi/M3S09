@@ -67,4 +67,9 @@ public class AlunoServiceImpl implements AlunoService {
         }
         return true;
     }
+
+    @Override
+    public List<AlunoModel> findByNome(String nome) {
+        return alunoRepository.findByNomeContainingIgnoreCase(nome);
+    }
 }
