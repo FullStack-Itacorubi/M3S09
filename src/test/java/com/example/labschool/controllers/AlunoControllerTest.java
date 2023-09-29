@@ -3,8 +3,9 @@ package com.example.labschool.controllers;
 import com.example.labschool.dtos.AlunoDto;
 import com.example.labschool.fixtures.AlunoFixture;
 import com.example.labschool.models.AlunoModel;
-import com.example.labschool.repositories.AlunoRepository;
+import com.example.labschool.services.AlunoService;
 import com.example.labschool.utils.JsonUtil;
+import jakarta.persistence.EntityNotFoundException;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +15,6 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 import static org.mockito.ArgumentMatchers.any;
@@ -29,19 +29,19 @@ public class AlunoControllerTest {
     private MockMvc mockMvc;
 
     @MockBean
-    private AlunoRepository alunoRepository;
+    private AlunoService alunoService;
 
     @Test
     public void saveAlunoTest() throws Exception {
         AlunoModel alunoModel = AlunoFixture.criarAlunoValido();
         AlunoDto requestDto = new AlunoDto(alunoModel);
 
-        when(alunoRepository.save(any())).thenReturn(alunoModel);
+        when(alunoService.save(any())).thenReturn(alunoModel);
 
         mockMvc.perform(
-                post("/alunos")
-                        .contentType(MediaType.APPLICATION_JSON)
-                        .content(JsonUtil.objToJson(requestDto))
+                        post("/alunos")
+                                .contentType(MediaType.APPLICATION_JSON)
+                                .content(JsonUtil.objToJson(requestDto))
                 )
                 .andExpectAll(
                         status().isCreated(),
@@ -60,7 +60,7 @@ public class AlunoControllerTest {
         AlunoModel aluno1 = alunos.get(0);
         AlunoModel aluno2 = alunos.get(1);
 
-        when(alunoRepository.findAll()).thenReturn(alunos);
+        when(alunoService.findAll()).thenReturn(alunos);
 
         mockMvc.perform(get("/alunos"))
                 .andExpectAll(
@@ -85,9 +85,9 @@ public class AlunoControllerTest {
         AlunoModel aluno = AlunoFixture.criarAlunoValido();
         aluno.setId(id);
 
-        when(alunoRepository.findById(id)).thenReturn(Optional.of(aluno));
+        when(alunoService.findById(id)).thenReturn(aluno);
 
-        mockMvc.perform(get("/alunos/"+id))
+        mockMvc.perform(get("/alunos/" + id))
                 .andExpectAll(
                         status().isOk(),
                         content().contentType(MediaType.APPLICATION_JSON),
@@ -107,11 +107,10 @@ public class AlunoControllerTest {
         aluno.setId(id);
         AlunoDto requestDto = new AlunoDto(aluno);
 
-        when(alunoRepository.findById(id)).thenReturn(Optional.of(aluno));
-        when(alunoRepository.save(any())).thenReturn(aluno);
+        when(alunoService.save(id, requestDto)).thenReturn(aluno);
 
         mockMvc.perform(
-                        put("/alunos/"+id)
+                        put("/alunos/" + id)
                                 .contentType(MediaType.APPLICATION_JSON)
                                 .content(JsonUtil.objToJson(requestDto))
                 )
@@ -135,7 +134,7 @@ public class AlunoControllerTest {
             alunoModel.setNome(null);
             AlunoDto requestDto = new AlunoDto(alunoModel);
 
-            when(alunoRepository.save(any())).thenReturn(alunoModel);
+            when(alunoService.save(any())).thenReturn(alunoModel);
 
             mockMvc.perform(
                             post("/alunos")
@@ -151,7 +150,7 @@ public class AlunoControllerTest {
             alunoModel.setTelefone(null);
             AlunoDto requestDto = new AlunoDto(alunoModel);
 
-            when(alunoRepository.save(any())).thenReturn(alunoModel);
+            when(alunoService.save(any())).thenReturn(alunoModel);
 
             mockMvc.perform(
                             post("/alunos")
@@ -167,7 +166,7 @@ public class AlunoControllerTest {
             alunoModel.setDataNascimento(null);
             AlunoDto requestDto = new AlunoDto(alunoModel);
 
-            when(alunoRepository.save(any())).thenReturn(alunoModel);
+            when(alunoService.save(any())).thenReturn(alunoModel);
 
             mockMvc.perform(
                             post("/alunos")
@@ -183,7 +182,7 @@ public class AlunoControllerTest {
             alunoModel.setCpf(null);
             AlunoDto requestDto = new AlunoDto(alunoModel);
 
-            when(alunoRepository.save(any())).thenReturn(alunoModel);
+            when(alunoService.save(any())).thenReturn(alunoModel);
 
             mockMvc.perform(
                             post("/alunos")
@@ -199,7 +198,7 @@ public class AlunoControllerTest {
             alunoModel.setNota(null);
             AlunoDto requestDto = new AlunoDto(alunoModel);
 
-            when(alunoRepository.save(any())).thenReturn(alunoModel);
+            when(alunoService.save(any())).thenReturn(alunoModel);
 
             mockMvc.perform(
                             post("/alunos")
@@ -207,6 +206,21 @@ public class AlunoControllerTest {
                                     .content(JsonUtil.objToJson(requestDto))
                     )
                     .andExpect(status().isBadRequest());
+        }
+
+    }
+
+    @Nested
+    class GetExceptionTest {
+
+        @Test
+        public void notFoundTest() throws Exception {
+            UUID id = UUID.randomUUID();
+
+            when(alunoService.findById(id)).thenThrow(EntityNotFoundException.class);
+
+            mockMvc.perform(get("/alunos/" + id))
+                    .andExpect(status().isNotFound());
         }
 
     }
